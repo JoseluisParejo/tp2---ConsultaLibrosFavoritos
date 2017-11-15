@@ -44,6 +44,18 @@ if(!$query->param){
     print $query->textfield(-name=>'escritor',-size=>10,-maxlength=>60);
     print $query->br;
     
+    print $query->label('Titulo Favorito ');
+    print $query->br;
+    print $query->h2('¿Acaso tienes un libro favorito?');
+    print $query->textfield(-name=>'librofav',-size=>10,-maxlength=>60);
+    print $query->br;
+    
+    print $query->label('Saga ');
+    print $query->br;
+    print $query->h2('¿Acaso tienes una saga favorita?');
+    print $query->textfield(-name=>'saga',-size=>10,-maxlength=>60);
+    print $query->br;
+    
     #Ahora terminamos el codigo con los botones para enviar la informacion y terminamos el formulario
     
     print $query->submit('submit','Enviar');
@@ -60,8 +72,10 @@ if(!$query->param){
     my $gusto = $query->param('gusto');
     my $editorial = $query->param('editorial');
     my $autor = $query->param('autor');
+    my $librofav = $query->param('librofav');
+    my $saga = $query->param('saga');
      open F, '>>/tmp/texto.txt' or die "Imposible abrir el fichero:$!";
-     print F "El tipo de libro era $tipo \n El gusto propio era $gusto \n La editorial que preferia era $editorial \n El autor preferido era $autor \n";
+     print F "El tipo de libro era $tipo \n El gusto propio era $gusto \n La editorial que preferia era $editorial \n El autor preferido era $autor \n El libro preferido era $librofav \n y la saga preferida era $saga \n";
      close F;
      open F, '/tmp/texto.txt' or die "Imposible abrir el fichero:$!";
     while(<F>) {
