@@ -1,15 +1,15 @@
-                                                    Tp2 ==> Libros
+# Tp2 Libros
                                                
----> Que es <---
+## **---> Que es <---**
 
 Aplicacion en CGI Perl de una gestión de libros, incluyendo una persistencia de datos en un archivo de texto
 Requisitos
 
----> Requisitos <---
+## **---> Requisitos <---**
 
 Necesitamos un servidor web (Como apache2), activar el módulo CGI y un navegador web (Como Firefox).
 
----> Ejecución <---
+## **---> Ejecución <---**
 
 Si usamos Unix, copiamos este proyecto y lo introducimos en la siguiente dirección: /usr/lib/cgi-bin/
 
