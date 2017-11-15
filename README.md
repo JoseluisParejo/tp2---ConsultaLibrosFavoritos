@@ -2,7 +2,9 @@
                                                
 ## **---> Que es <---**
 
-Aplicacion en CGI Perl de una gestión de libros, incluyendo una persistencia de datos en un archivo de texto
+Aplicacion en CGI Perl de una consulta para saber los libros preferidos por los usuarios, incluyendo una persistencia 
+de datos en un archivo de texto
+
 Requisitos
 
 ## **---> Requisitos <---**
