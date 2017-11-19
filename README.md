@@ -17,4 +17,12 @@ Si usamos Unix, copiamos este proyecto y lo introducimos en la siguiente direcci
 
 Le otorgamos los permisos necesarios y entramos en el navegador web a introducir la siguiente dirección: localhost/cgi-bin/comunidad.pl
 
-El fichero de texto que generará este proyecto se guardara en: /tmp/archivo.txt                                         
+El fichero de texto que generará este proyecto se guardara en: /tmp/texto.txt    
+
+## **---> A implementar más adelante <---**
+
+También recogemos el nombre del cliente, si es un nombre que ya tenemos de una vez anterior
+indicaremos, `ya existente` y no atendemos esa petición.
+Al guardar en fichero también grabaremos el nombre del cliente, de esta forma los registros
+grabados en fichero estarán identificados a quien pertenecen.
+ 
