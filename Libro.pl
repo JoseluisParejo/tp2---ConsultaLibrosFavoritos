@@ -6,7 +6,7 @@ use utf8;
 $query = new CGI;
 
 if(!$query->param){
-    print $query->header(-charset => 'utf8');
+    print $query->header(-charset => 'iso-8859-1');
     print $query->start_html('Libros');
     print $query->start_form(-onsubmit=>'/submit');
     
@@ -66,7 +66,7 @@ if(!$query->param){
 
     #Ahora empezamos a crear el fichero guardando en variables los datos anteriores. Luego lo almacenamos en un fichero
     
-    print $query->header(-charset => 'utf8');
+    print $query->header(-charset => 'iso-8859-1');
     print $query->start_html('Datos de Libros');
     my $tipo = $query->param('tipo');
     my $gusto = $query->param('gusto');
